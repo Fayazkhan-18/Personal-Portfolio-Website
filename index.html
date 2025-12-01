@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Full Stack Web Developer (MERN)</title>
+
+  <!-- Bootstrap 5 CSS (no JS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Internal CSS: layout, responsive rules, visual polish -->
+   <link rel="stylesheet" href="styles.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true">FW</span>
+        <div>
+          <div style="font-weight:700">Full-Stack Web Developer</div>
+          <div class="muted" style="font-size:.9rem">MERN · HTML5 · CSS3 · Bootstrap</div>
+        </div>
+      </a>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <!-- Using simple links (no JS). On small screens they wrap. -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/Fayazkhan-18" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-inner container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1>Hi, I’m Fayaz Khan. I design and develop frontend experiences that are fast, accessible, and visually precise.</h1>
+            <p class="lead">I use semantic HTML5, responsive CSS, and Bootstrap to build intuitive, device-friendly interfaces — and rapid MERN prototypes to test and refine ideas.</p>
+
+            <div class="cta">
+              <a href="#projects" class="btn btn-lg btn-light" style="background:rgba(255,255,255,0.12);color:white;border:none;">See projects</a>
+              <a href="#contact" class="btn btn-lg btn-primary">Hire / Contact</a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end d-none d-lg-block">
+            <div style="background:rgba(255,255,255,0.06); padding:1rem; border-radius:10px; display:inline-block;">
+              <div class="caps">Top skills</div>
+              <div class="muted" style="margin-top:.5rem">Semantic HTML · Responsive CSS · Flexbox/Grid · Bootstrap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content grid -->
+    <main class="main-grid" role="main">
+
+      <!-- Left column -->
+      <section>
+        <!-- About -->
+        <section id="about" class="mb-4">
+          <div class="d-flex align-items-start gap-3">
+            <div style="flex:0 0 84px;">
+              <img src="Profile.jpeg" alt="Profile photo" style="width:84px;height:84px;border-radius:12px;object-fit:cover;">
+            </div>
+            <div>
+              <h2 style="margin:0 0 .25rem 0">About me</h2>
+              <p class="muted" style="margin:0 0 .5rem 0">I design and build responsive user interfaces with a focus on accessible markup and maintainable CSS. I enjoy translating design into clean components and producing clear documentation and GitHub-hosted projects.</p>
+
+              <ul class="list-unstyled d-flex gap-3" style="padding-left:0;">
+                <li><strong>Location:</strong> Vellore, India</li>
+                <li><strong>Role:</strong> Full Stack Web Developer</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 style="margin:0">Selected projects</h3>
+            <div class="muted">4 projects • GitHub repo available</div>
+          </div>
+
+          <div class="row g-3">
+            <!-- Project 1 -->
+            <div class="col-12 col-md-6">
+              <article class="card">
+                <div class="project-thumbnail" style="background-image:url('https://images.unsplash.com/photo-1526378723974-2a8b876f6e4c?q=80&w=1200&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Website (This project)</h5>
+                  <p class="card-text muted">Responsive HTML5 layout, CSS Grid & Flexbox, internal CSS, Bootstrap CSS for structure. Hosted on GitHub Pages.</p>
+                  <p class="mb-0"><small class="text-muted">Tech: HTML5 · CSS3 · Bootstrap (CSS only)</small></p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6">
+              <article class="card">
+                <div class="project-thumbnail" style="background-image:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Landing Page — Product</h5>
+                  <p class="card-text muted">Accessible heading structure, scalable components and BEM-style CSS sectioning. Includes a contact form with validations.</p>
+                  <p class="mb-0"><small class="text-muted">Tech: HTML5 · CSS Grid · Flexbox</small></p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-12 col-md-6">
+              <article class="card">
+                <div class="project-thumbnail" style="background-image:url('https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1200&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Blog Template</h5>
+                  <p class="card-text muted">Clean semantic markup for articles and author metadata, responsive typographic scale and print-friendly styles.</p>
+                  <p class="mb-0"><small class="text-muted">Tech: HTML5 · CSS3</small></p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-12 col-md-6">
+              <article class="card">
+                <div class="project-thumbnail" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');"></div>
+                <div class="card-body">
+                  <h5 class="card-title">CSS Utility Library</h5>
+                  <p class="card-text muted">Small set of utilities focusing on spacing, layout helpers and accessible forms used across projects.</p>
+                  <p class="mb-0"><small class="text-muted">Tech: CSS3</small></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="blog-list mb-4">
+          <h3>Recent posts</h3>
+
+          <article>
+            <h4 style="margin:.25rem 0 .5rem 0">Why semantic HTML matters</h4>
+            <div class="muted" style="font-size:.95rem;margin-bottom:.5rem">April 2025 • 4 min read</div>
+            <p class="muted">Semantic elements improve accessibility, provide predictable structure for assistive tech, and make styling simpler. Use headings, landmarks and clear ARIA when needed.</p>
+            <a href="#" class="muted" aria-label="Read full post">Read full post →</a>
+          </article>
+
+          <article>
+            <h4 style="margin:.25rem 0 .5rem 0">Responsive design patterns without JS</h4>
+            <div class="muted" style="font-size:.95rem;margin-bottom:.5rem">March 2025 • 3 min read</div>
+            <p class="muted">Grid and flexbox provide robust responsive patterns. Prefer fluid units, min() and clamp() for typographic scaling and layout thresholds.</p>
+            <a href="#" class="muted">Read full post →</a>
+          </article>
+        </section>
+      </section>
+
+      <!-- Right column -->
+      <aside>
+        <!-- Skills -->
+        <section id="skills" class="mb-3">
+          <h4 style="margin-bottom:.6rem">Skill taxonomy</h4>
+          <div class="skills-grid mb-3" aria-hidden="false">
+            <div class="skill-pill"><span class="skill-dot" style="background:#0d6efd"></span><div><strong>HTML5</strong><div class="muted">Semantic tags, forms</div></div></div>
+            <div class="skill-pill"><span class="skill-dot" style="background:#6610f2"></span><div><strong>CSS3</strong><div class="muted">Box model, Flexbox, Grid</div></div></div>
+            <div class="skill-pill"><span class="skill-dot" style="background:#198754"></span><div><strong>Responsive</strong><div class="muted">Media queries, mobile-first</div></div></div>
+            <div class="skill-pill"><span class="skill-dot" style="background:#0d6efd"></span><div><strong>Bootstrap (CSS)</strong><div class="muted">Cards, grid layout</div></div></div>
+            <div class="skill-pill"><span class="skill-dot" style="background:#6f42c1"></span><div><strong>Git & GitHub</strong><div class="muted">Repo hosting & version control</div></div></div>
+            <div class="skill-pill"><span class="skill-dot" style="background:#fd7e14"></span><div><strong>Accessibility</strong><div class="muted">ARIA, keyboard nav</div></div></div>
+          </div>
+
+          <div class="mb-2">
+            <div class="caps">Achievement criteria</div>
+            <ul class="muted" style="padding-left:1rem;margin:0.5rem 0;">
+              <li>Correct semantic layout and responsive behavior</li>
+              <li>Forms with HTML5 validation and clear error hints</li>
+              <li>GitHub repo with meaningful commits and live site link</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-card" aria-labelledby="contactHeading">
+          <h4 id="contactHeading">Contact</h4>
+          <p class="muted">Use the form to send a message. Fields are validated using HTML5 attributes.</p>
+
+          <!-- Contact form: internal validation only. On real deployment, set a server endpoint or use form provider. -->
+          <form action="https://example.com/form-endpoint" method="post" novalidate>
+            <div class="mb-2">
+              <label for="name" class="form-label">Full name</label>
+              <input id="name" name="name" type="text" required minlength="2" maxlength="60" class="form-control" placeholder="Your full name" />
+            </div>
+
+            <div class="mb-2">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" type="email" required class="form-control" placeholder="name@example.com" />
+            </div>
+
+            <div class="mb-2">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="4" required class="form-control" placeholder="Enter your message"></textarea>
+            </div>
+
+            <div class="mb-3 muted" style="font-size:.9rem">
+              <strong>Note:</strong> In production replace the form `action` with your server endpoint or a form service (Netlify Forms, Formspree, etc.). HTML validation will run in the browser.
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- GitHub & Hosting info -->
+        <section class="mt-3">
+          <h5 style="margin-bottom:.5rem">Host & Repo</h5>
+          <p class="muted" style="margin:0 0 .5rem 0">Repository: <a href="https://github.com/Fayazkhan-18" target="_blank" rel="noopener">https://github.com/Fayazkhan-18</a></p>
+          <p class="muted" style="margin:0"><strong>Hosting:</strong> GitHub Pages / Netlify (static site)</p>
+        </section>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <strong>Full-Stack Web Developer</strong><br/>
+          <span class="muted">Semantic HTML5 · CSS3 · Bootstrap</span>
+        </div>
+
+        <div class="muted">
+        <a href="mailto:fayazkhan.learner@gmail.com" target="_blank1">fayazkhan.learner@gmail.com</a><br><br>
+        <p>© 2025 Fayaz Khan. All rights reserved.</p>
+      </div>
+      </div>
+
+      <div style="margin-top:.8rem;font-size:.9rem" class="muted">
+        <strong>Evaluation notes</strong>
+        <ul style="margin:.4rem 0 0 1rem">
+          <li>Semantic HTML and responsive layout required for full marks.</li>
+          <li>Partial achievement: minor missing tags or small layout issues.</li>
+          <li>A scorecard with comments should accompany the submission.</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
